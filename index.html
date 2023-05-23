@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điểm số</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body class="light">
+    <h1 class="text-xl lg:text-3xl font-semibold text-center mt-6 mb-4">Tính điểm thi tốt nghiệp</h1>
+    <div class="grid md:grid-cols-3 justify-between gap-6 px-4 md:px-6">
+        <div class="bg-white border border-gray-300 rounded-lg p-6 shadow-md">
+            <h2 class="text-2xl text-center font-semibold mb-4">Toán Văn Anh</h2>
+            <div class="mb-4">
+                <label class="block font-semibold" for="toan">Toán:</label>
+                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="toan">
+            </div>
+            <div class="mb-4">
+                <label class="block font-semibold" for="van">Văn:</label>
+                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="van">
+            </div>
+            <div class="mb-4">
+                <label class="block font-semibold" for="anh">Anh:</label>
+                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="anh">
+            </div>
+        </div>
+        <!-- Tổ hợp -->
+        <div class="bg-white border border-gray-300 rounded-lg p-6 shadow-md">
+            <h2 class="text-2xl text-center font-semibold mb-4">Tổ hợp môn</h2>
+            <div class="mb-4">
+                <label class="block font-semibold" for="ly">Lý / Sử:</label>
+                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="ly">
+            </div>
+            <div class="mb-4">
+                <label class="block font-semibold" for="hoa">Hóa / Địa:</label>
+                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="hoa">
+            </div>
+            <div class="mb-4">
+                <label class="block font-semibold" for="sinh">Sinh / GDCD:</label>
+                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="sinh">
+            </div>
+        </div>
+        <!-- Điểm học bạ và Tổ hợp -->
+        <div class="bg-white border border-gray-300 rounded-lg p-6 shadow-md">
+            <div class="mb-4">
+                <h2 class="text-2xl text-center font-semibold mb-4">Điểm học bạ</h2>
+                <label class="block font-semibold" for="diemlop12">Điểm lớp 12:</label>
+                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="diemlop12">
+            </div>
+
+            <div class="mb-4">
+                <h2 class="text-2xl text-center font-semibold mb-4">Điểm cộng thêm</h2>
+                <label class="block font-semibold" for="diemuutien">Ưu tiên:</label>
+                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="diemuutien">
+            </div>
+
+            <div class="mb-4">
+                <label class="block font-semibold" for="diemkk">Khuyến khích:</label>
+                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="diemkk">
+            </div>
+        </div>
+
+        <div class="justify-center">
+            <div id="result" class="h-auto mt-6 p-4 bg-white border border-gray-300 rounded-md shadow-md">
+                <p class="text-xl text-center font-semibold mb-2">Kết quả:</p>
+                <p id="score" class="text-2xl text-center font-bold"></p>
+                <p id="status" class="text-lg font-semibold text-center">
+                    <span id="status-text"></span>
+                </p>
+                <p id="encouragement" class="text-center text-lg font-semibold"></p>
+            </div>
+        </div>
+
+        <div class="grid place-items-center justify-center mb-16">
+            <button id="calculate-btn" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded">
+                Tính điểm
+            </button>
+        </div>
+
+        <div
+            class="lg:col-start-3 bg-white border border-gray-300 rounded-lg p-6 shadow-md text-center font-semibold text-lg">
+            CÁCH TÍNH ĐIỂM<br>
+            <img src="./tinh-diem.jpg" alt="Tính điểm THPT" class="w-full">
+            <a class="text-base md:text-sm font-normal">Tham khảo về điểm cộng thêm <a
+                    class="text-base font-bold text-red-600 cursor-pointer"
+                    href="https://huongnghiep.hocmai.vn/diem-uu-tien-la-gi-tat-tan-tat-ve-cach-tinh-diem-uu-tien-xet-tuyen-dai-hoc/"
+                    target="_blank">tại
+                    đây</a></a>
+        </div>
+
+    </div>
+
+    <div id="theme-toggle" class="fixed bottom-4 cursor-pointer top-4 right-4 z-10">
+        <i id="theme-icon" class="fas fa-moon text-2xl text-yellow-500"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+.text-red-500 {
+    color: red;
+}
+
+.text-green-500 {
+    color: #00ba2b;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+body.dark {
+    background-color: #333c47;
+    color: #ffffff;
+}
+
+.dark h1,
+.dark h2,
+.dark label,
+.dark button {
+    color: #ffffff;
+}
+
+.dark input {
+    color: #333c47;
+}
+
+.dark div div div {
+    background-color: #2d3748;
+    color: #ffffff;
+}
+
+.dark div .text-green-500 {
+    background-color: #2d3748;
+    color: #00ff00;
+}
+
+.dark .bg-white {
+    background-color: #2d3748;
+}
