@@ -72,3 +72,16 @@ themeToggle.addEventListener('click', function () {
     }
 });
 
+var clearButton = document.getElementById("clear-btn");
+clearButton.addEventListener("click", clearData);
+
+function clearData() {
+    var inputElements = document.getElementsByTagName("input");
+    for (var i = 0; i < inputElements.length; i++) {
+        var input = inputElements[i];
+        if (input.type === "text") {
+            input.value = "";
+        }
+    }
+}
+

@@ -17,15 +17,18 @@
             <h2 class="text-2xl text-center font-semibold mb-4">Toán Văn Anh</h2>
             <div class="mb-4">
                 <label class="block font-semibold" for="toan">Toán:</label>
-                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="toan">
+                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="toan"
+                    autocomplete="off">
             </div>
             <div class="mb-4">
                 <label class="block font-semibold" for="van">Văn:</label>
-                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="van">
+                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="van"
+                    autocomplete="off">
             </div>
             <div class="mb-4">
                 <label class="block font-semibold" for="anh">Anh:</label>
-                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="anh">
+                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="anh"
+                    autocomplete="off">
             </div>
         </div>
         <!-- Tổ hợp -->
@@ -33,15 +36,18 @@
             <h2 class="text-2xl text-center font-semibold mb-4">Tổ hợp môn</h2>
             <div class="mb-4">
                 <label class="block font-semibold" for="ly">Lý / Sử:</label>
-                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="ly">
+                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="ly"
+                    autocomplete="off">
             </div>
             <div class="mb-4">
                 <label class="block font-semibold" for="hoa">Hóa / Địa:</label>
-                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="hoa">
+                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="hoa"
+                    autocomplete="off">
             </div>
             <div class="mb-4">
                 <label class="block font-semibold" for="sinh">Sinh / GDCD:</label>
-                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="sinh">
+                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="sinh"
+                    autocomplete="off">
             </div>
         </div>
         <!-- Điểm học bạ và Tổ hợp -->
@@ -49,18 +55,21 @@
             <div class="mb-4">
                 <h2 class="text-2xl text-center font-semibold mb-4">Điểm học bạ</h2>
                 <label class="block font-semibold" for="diemlop12">Điểm lớp 12:</label>
-                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="diemlop12">
+                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="diemlop12"
+                    autocomplete="off">
             </div>
 
             <div class="mb-4">
                 <h2 class="text-2xl text-center font-semibold mb-4">Điểm cộng thêm</h2>
                 <label class="block font-semibold" for="diemuutien">Ưu tiên:</label>
-                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="diemuutien">
+                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="diemuutien"
+                    autocomplete="off">
             </div>
 
             <div class="mb-4">
                 <label class="block font-semibold" for="diemkk">Khuyến khích:</label>
-                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="diemkk">
+                <input class="border border-gray-300 rounded-md px-3 py-2 w-full" type="text" id="diemkk"
+                    autocomplete="off">
             </div>
         </div>
 
@@ -75,10 +84,17 @@
             </div>
         </div>
 
-        <div class="grid place-items-center justify-center mb-16">
-            <button id="calculate-btn" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded">
-                Tính điểm
-            </button>
+        <div class="grid col-start-1 lg:col-start-2  place-items-center justify-center mb-16">
+            <div class="grid grid-cols-2 gap-8">
+                <button id="calculate-btn"
+                    class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded">
+                    Tính điểm
+                </button>
+
+                <button id="clear-btn" class="bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-2 rounded">
+                    Xóa dữ liệu
+                </button>
+            </div>
         </div>
 
         <div

@@ -39,3 +39,19 @@ body.dark {
 .dark .bg-white {
     background-color: #2d3748;
 }
+
+@media (max-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lg\\:col-start-3 {
+        grid-column-start: auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .md\:grid-cols-3 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
